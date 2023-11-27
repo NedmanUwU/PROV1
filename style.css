@@ -1,0 +1,46 @@
+.article{
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    width:max-content;
+    height:auto;
+
+    color: rgb(58, 58, 58);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.article:hover{
+    background-color: white;
+    box-shadow: none;
+}
+
+.articleText{
+    flex-direction: column;
+}
+
+h2{
+    font-weight: bold;
+}
+
+
+
+@media (min-width: 769px) {
+    *{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #posts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article{
+        flex: 1 0 21%;
+        margin: 5px;
+    }
+}
